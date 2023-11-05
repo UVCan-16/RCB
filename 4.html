@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Interactive Yes/No Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        #answer {
+            font-size: 20px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1><p style="font-size: 120px;">lets go to beach after mlc class</p></h1>
+    <button id="yesButton">Yes</button>
+    <button id="noButton">No</button>
+    <p id="answer"></p>
+
+    <script>
+        // JavaScript to make the page interactive
+        const yesButton = document.getElementById("yesButton");
+        const noButton = document.getElementById("noButton");
+        const answerDisplay = document.getElementById("answer");
+
+        // Event listeners for "Yes" and "No" buttons
+        yesButton.addEventListener("click", function() {
+            answerDisplay.textContent = "Great! Catch you soon.";
+        });
+
+        noButton.addEventListener("click", function() {
+            answerDisplay.textContent = "That's okay.There's always a next time.";
+        });
+    </script>
+</body>
+</html>
